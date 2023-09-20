@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "6.1.17",
+  "version": "6.1.19",
   "description": "A simple, maximally extensible, dependency minimized framework for building modern Wanchain dApps",
   "keywords": [
     "react",
@@ -21,7 +21,7 @@
   "author": "Ji Shiwu <mutouji1@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git://github.com/codeoneline/web3-react.git"
+    "url": "git://github.com/wanswap/web3-react-wan.git"
   },
   "main": "dist/index.js",
   "module": "dist/trezor-connector.esm.js",
@@ -35,7 +35,7 @@
     "lint": "tsdx lint src"
   },
   "dependencies": {
-    "@0x/subproviders": "^5.0.4",
+    "@0x/subproviders": "^7",
     "@wanswap/subproviders": "^0.0.1",
     "@web3-react-wan/abstract-connector": "^6.1.7",
     "@web3-react-wan/types": "^6.1.7",
