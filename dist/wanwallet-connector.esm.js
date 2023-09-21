@@ -424,7 +424,9 @@ var WanWalletConnector = /*#__PURE__*/function (_AbstractConnector) {
         while (1) switch (_context3.prev = _context3.next) {
           case 0:
             return _context3.abrupt("return", new Promise(function (resolve, reject) {
+              console.log('wanwallet-connector getChainId');
               window.web3.eth.getChainId(function (err, chainId) {
+                console.log('wanwallet-connector getChainId: %O, %O', err, chainId);
                 if (err) {
                   reject(err);
                 } else {
