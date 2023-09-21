@@ -17,7 +17,7 @@ export declare class WanWalletConnector extends AbstractConnector {
     activate(): Promise<ConnectorUpdate>;
     private handleDisconnect;
     getProvider(): Promise<Web3ProviderEngine>;
-    getChainId(): Promise<number>;
+    getChainId(): Promise<number | string>;
     getAccount(): Promise<null>;
     deactivate(): void;
     close(): Promise<void>;
