@@ -429,10 +429,12 @@ var WanWalletConnector = /*#__PURE__*/function (_AbstractConnector) {
       return _regeneratorRuntime().wrap(function _callee3$(_context3) {
         while (1) switch (_context3.prev = _context3.next) {
           case 0:
+            // return this.chainId
+            console.log('call wanwallet-connector getChainId');
             return _context3.abrupt("return", new Promise(function (resolve, reject) {
-              console.log('wanwallet-connector getChainId');
+              console.log('wanwallet-connector getChainId promise');
               window.web3.eth.getChainId(function (err, chainId) {
-                console.log('wanwallet-connector getChainId: %O, %O', err, chainId);
+                console.log('wanwallet-connector getChainId promise: %O, %O', err, chainId);
                 if (err) {
                   reject(err);
                 } else {
@@ -440,7 +442,7 @@ var WanWalletConnector = /*#__PURE__*/function (_AbstractConnector) {
                 }
               });
             }));
-          case 1:
+          case 2:
           case "end":
             return _context3.stop();
         }
